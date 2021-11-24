@@ -13,7 +13,7 @@ def hide_debit_numbers(card_number: str) -> str:
     :param card_number: номер карты 16 цифр
     :return: номер карты, вида 1111********1111
     """
-    result = None
+    result = c_numb[:4] + '********' + c_numb[-4:]
     return result
 
 
